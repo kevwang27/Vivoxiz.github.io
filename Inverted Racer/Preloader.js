@@ -26,6 +26,7 @@ invertedRacer.Preloader.prototype = {
         this.load.image('cone', 'assets/traffic cone.png');
 
         this.load.image('boom1', 'assets/explosion1.fw.png');
+        this.load.image('arrow', 'assets/Up arrow.png');
     },
     
     create:function () {},
