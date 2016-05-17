@@ -5,15 +5,15 @@ Inverted Racer
 
 ##### Genre
 
-This game could be classified as an action and racing game.
+This game can be classified as an action and racing game.
 
 ##### The Story of the Inverted Rider 
 
-*Once upon a time, there was an English guy. He came to America, hoping to have a good time driving on the left side of the road. What he didn't know, though, was that America was different than the UK, and that HE WAS BREAKING THE LAW.*
+*Once upon a time, there was an English man. He travelled to America, hoping to have a good time driving on the left side of the road. What he didn't know, though, was that America was different than the UK, and that HE WAS BREAKING THE LAW.*
 
 ##### Object of the Game
 
-THe main goal of the game is to avoid oncoming traffic.
+The main goal of the game is to avoid oncoming traffic.
 
 There are two different possible objectives in the game, as there are two different modes. In one mode, you need to survive for a certain distance to reach an end, which is a roadblock created by police, without crashing and losing all three lives. 
 
