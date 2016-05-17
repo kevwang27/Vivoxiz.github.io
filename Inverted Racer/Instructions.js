@@ -3,12 +3,15 @@ invertedRacer.Instructions = function (game) {
     this.Downkey;
     this.Leftkey;
     this.Rightkey;
+    this.UpArrow;
     this.carHowTo
 }
 
 invertedRacer.Instructions.prototype = {
     create: function() {
         this.add.image(0, 0, 'road');
+        this.UpArrow = this.add.image(this.world.centerX + 5, this.world.centerY + 50, 'Arrow');
+        this.UpArrow.anchor.setTo(0.5, 0.5);
         this.Upkey = this.add.image(this.world.centerX + 5, this.world.centerY, 'wKey');
         this.Upkey.anchor.setTo(0.5, 0.5);
         this.Downkey = this.add.image(this.world.centerX + 5, this.world.centerY + 94, 'sKey');
