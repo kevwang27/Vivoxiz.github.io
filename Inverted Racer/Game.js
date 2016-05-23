@@ -186,7 +186,7 @@ invertedRacer.Game.prototype = {
         for (var i = 0; i < 5; i++) {
             this.bBush;
             this.laneBush = this.rnd.integerInRange(0, 5);
-            this.spawnDelay = this.rnd.integerInRange(20, 3000);
+            this.spawnDelay = this.rnd.integerInRange(150, 3000);
             if (this.laneBush == 0) {
                 this.bBush = this.bushes.create(15, (0 - 20) - this.rnd.integerInRange(0, 686), 'bush');
             } else if (this.laneBush == 1) {
@@ -238,9 +238,9 @@ invertedRacer.Game.prototype = {
     playerMovement: function () {
         var mod = 1;
         if (this.p1.body.x + this.p1.body.width > 585){
-            mod = 0.3;
+            mod = 0.5;
         } else if (this.p1.body.x < 105){
-            mod = 0.3;
+            mod = 0.5;
         }
         if (!this.hit){
             if (this.gameover === false) {
