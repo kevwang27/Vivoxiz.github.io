@@ -111,7 +111,7 @@ invertedRacer.Game.prototype = {
             this.random2 = this.rnd.integerInRange(100, 400);
             this.enemy.AI = this.random;
             this.enemy.whenDo = this.random2;
-            this.value = this.rnd.integerInRange(1, 3);
+            this.value = this.rnd.integerInRange(1, 4);
             if (this.value == 1){
                 this.enemies.getAt(i).body.velocity.y = 250;
                 this.enemies.getAt(i).basevelocity = 250;
@@ -126,6 +126,11 @@ invertedRacer.Game.prototype = {
                 this.enemies.getAt(i).body.velocity.y = 200;
                 this.enemies.getAt(i).basevelocity = 200;
                 this.enemies.getAt(i).loadTexture('enemy3.1');
+                this.enemies.getAt(i).body.x = this.enemies.getAt(i).body.x - this.enemies.getAt(i).body.halfWidth;
+            } else if (this.value == 4){
+                this.enemies.getAt(i).body.velocity.y = 201;
+                this.enemies.getAt(i).basevelocity = 201;
+                this.enemies.getAt(i).loadTexture('police');
                 this.enemies.getAt(i).body.x = this.enemies.getAt(i).body.x - this.enemies.getAt(i).body.halfWidth;
             }
             this.physics.arcade.enable(this.enemy);
@@ -323,7 +328,10 @@ invertedRacer.Game.prototype = {
                     this.p1.angle = 10;
                 }
                 this.hit = true;
-                this.lives -= 1;
+                if (b.body.velocity.y == 201) {
+                    this.lives -= 3;
+                } 
+                else this.lives -= 1; 
                 this.life.text = "Lives: " + this.lives;
                 
                 this.checkLivesLeft();
